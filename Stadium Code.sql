@@ -1,0 +1,76 @@
+﻿CREATE TABLE Stadium(
+   CardID    INTEGER  NOT NULL 
+  ,StadiumID INTEGER  NOT NULL 
+  ,Stadium   VARCHAR(28) NOT NULL,
+constraint stadium_pk1 primary key (StadiumID,CardID),
+constraint stadium_fk1 foreign key (CardID) references Cards(CardID)
+);
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (87396,1,'Old Atlanta');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (19085,2,'Shibe Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (65194,3,'Crosley Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (71068,4,'Forbes Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (92397,5,'Sportsman''s Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (88469,6,'Hubert H. Humphrey Metrodome');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (43463,7,'Old Miami');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (59142,8,'Griffith Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (30448,9,'Yankee Stadium (1976-2008)');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (81436,10,'Shea Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (23870,11,'Old Texas');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (22557,12,'Oriole Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (65836,13,'Fenway Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (14890,14,'Yankee Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (72910,15,'Tropicana Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (50894,16,'Rogers Centre');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (35397,17,'Guaranteed Rate Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (72066,18,'Progressive Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (93391,19,'Comerica Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (38886,20,'Kauffman Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (60138,21,'Target Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (51554,22,'Angel Stadium of Anaheim');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (50962,23,'Oakland Coliseum');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (42767,24,'T-Mobile Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (28866,25,'Globe Life Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (63080,26,'Minute Maid Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (72154,27,'Truist Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (11748,28,'Marlins Park�');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (13340,29,'Nationals Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (74132,30,'CITI FIELD');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (60643,31,'Busch Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (36708,32,'Chase Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (94797,33,'Coors Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (70088,34,'Dodger Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (29069,35,'Petco Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (88308,36,'Oracle Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (48519,37,'Citizens Bank Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (12444,38,'Wrigley Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (88872,39,'Great American Ball Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (42265,40,'Miller Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (98512,41,'PNC Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (60374,42,'Citizens Bank Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (39661,43,'Wrigley Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (18191,44,'Great American Ball Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (82063,45,'Miller Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (28527,46,'PNC Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (91779,47,'Wagonman Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (27043,48,'Main Street Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (17028,49,'Laughing Mountain Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (12355,50,'Blue River Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (51910,51,'Red Rocks Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (74464,52,'Center City Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (82257,53,'Franco Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (47079,54,'Majestic Greens Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (94439,55,'Riverboat Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (29005,56,'Green Valley Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (98244,57,'Highland Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (17279,58,'Barnes Canyon Ballpark');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (32406,59,'Statesman Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (41453,60,'The Porch');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (19391,61,'All American Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (20361,62,'Shippett Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (47187,63,'Oak Street Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (77038,64,'Capitol Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (64730,65,'Ironhorse Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (57030,66,'Bayfront Park');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (90972,67,'Crystal Falls Stadium');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (60063,68,'Water Ridge Field');
+INSERT INTO Stadium(CardID,StadiumID,Stadium) VALUES (76261,69,'Industry Center Stadium');
