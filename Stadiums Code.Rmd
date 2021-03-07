@@ -1,0 +1,193 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+urls <-paste0("https://theshownation.com/mlb20/community_market?max_best_buy_price=&amp;max_best_sell_price=&amp;min_best_buy_price=&amp;min_best_sell_price=&amp;name=&amp;rarity_id=4&amp;type=stadium")
+players={}
+
+webpage <- read_html(urls[1])
+tbls <- html_nodes(webpage, "table")
+
+tbls_ls <- webpage %>%
+  html_nodes("table") %>%
+  .[1:1] %>%
+  html_table(fill = TRUE)
+
+stadium = as.data.frame(tbls_ls)
+
+
+  webpage <- read_html(urls)
+  tbls <- html_nodes(webpage, "table")
+  
+  tbls_ls <- webpage %>%
+    html_nodes("table") %>%
+    .[1:1] %>%
+    html_table(fill = TRUE)
+  
+  markettable = as.data.frame(tbls_ls)
+  stadium=rbind(stadium,markettable)
+
+
+library(dplyr)
+stadiumtable <-distinct(stadium)
+stadiumtable$rarity <-"Diamond"
+```
+
+```{r}
+urls <-paste0("https://theshownation.com/mlb20/community_market?page=1&max_best_buy_price=&amp=&max_best_sell_price=&min_best_buy_price=&min_best_sell_price=&name=&rarity_id=2&type=stadium")
+players={}
+
+webpage <- read_html(urls[1])
+tbls <- html_nodes(webpage, "table")
+
+tbls_ls <- webpage %>%
+  html_nodes("table") %>%
+  .[1:1] %>%
+  html_table(fill = TRUE)
+
+stadium = as.data.frame(tbls_ls)
+
+
+  webpage <- read_html(urls)
+  tbls <- html_nodes(webpage, "table")
+  
+  tbls_ls <- webpage %>%
+    html_nodes("table") %>%
+    .[1:1] %>%
+    html_table(fill = TRUE)
+  
+  markettable = as.data.frame(tbls_ls)
+  stadium=rbind(stadium,markettable)
+
+
+library(dplyr)
+stadiumtable1 <-distinct(stadium)
+stadiumtable1$rarity <-"Silver"
+```
+
+```{r}
+urls <-paste0("https://theshownation.com/mlb20/community_market?page=2&max_best_buy_price=&amp=&max_best_sell_price=&min_best_buy_price=&min_best_sell_price=&name=&rarity_id=2&type=stadium")
+players={}
+
+webpage <- read_html(urls[1])
+tbls <- html_nodes(webpage, "table")
+
+tbls_ls <- webpage %>%
+  html_nodes("table") %>%
+  .[1:1] %>%
+  html_table(fill = TRUE)
+
+stadium = as.data.frame(tbls_ls)
+
+
+  webpage <- read_html(urls)
+  tbls <- html_nodes(webpage, "table")
+  
+  tbls_ls <- webpage %>%
+    html_nodes("table") %>%
+    .[1:1] %>%
+    html_table(fill = TRUE)
+  
+  markettable = as.data.frame(tbls_ls)
+  stadium=rbind(stadium,markettable)
+
+
+library(dplyr)
+stadiumtable2 <-distinct(stadium)
+stadiumtable2$rarity <-"Silver"
+```
+
+```{r}
+urls <-paste0("https://theshownation.com/mlb20/community_market?page=1&max_best_buy_price=&amp=&max_best_sell_price=&min_best_buy_price=&min_best_sell_price=&name=&rarity_id=2&type=stadium")
+players={}
+
+webpage <- read_html(urls[1])
+tbls <- html_nodes(webpage, "table")
+
+tbls_ls <- webpage %>%
+  html_nodes("table") %>%
+  .[1:1] %>%
+  html_table(fill = TRUE)
+
+stadium = as.data.frame(tbls_ls)
+
+
+  webpage <- read_html(urls)
+  tbls <- html_nodes(webpage, "table")
+  
+  tbls_ls <- webpage %>%
+    html_nodes("table") %>%
+    .[1:1] %>%
+    html_table(fill = TRUE)
+  
+  markettable = as.data.frame(tbls_ls)
+  stadium=rbind(stadium,markettable)
+
+
+library(dplyr)
+stadiumtable1 <-distinct(stadium)
+stadiumtable1$rarity <-"Silver"
+```
+
+```{r}
+urls <-paste0("https://theshownation.com/mlb20/community_market?max_best_buy_price=&amp;max_best_sell_price=&amp;min_best_buy_price=&amp;min_best_sell_price=&amp;name=&amp;rarity_id=1&amp;type=stadium")
+players={}
+
+webpage <- read_html(urls[1])
+tbls <- html_nodes(webpage, "table")
+
+tbls_ls <- webpage %>%
+  html_nodes("table") %>%
+  .[1:1] %>%
+  html_table(fill = TRUE)
+
+stadium = as.data.frame(tbls_ls)
+
+
+  webpage <- read_html(urls)
+  tbls <- html_nodes(webpage, "table")
+  
+  tbls_ls <- webpage %>%
+    html_nodes("table") %>%
+    .[1:1] %>%
+    html_table(fill = TRUE)
+  
+  markettable = as.data.frame(tbls_ls)
+  stadium=rbind(stadium,markettable)
+
+
+library(dplyr)
+stadiumtable3 <-distinct(stadium)
+stadiumtable3$rarity <-"Bronze"
+```
+
+```{r}
+stadiumscombined <-rbind(stadiumtable,stadiumtable1,stadiumtable2,stadiumtable2,stadiumtable3)
+```
+
